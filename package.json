@@ -1,0 +1,12 @@
+{
+  "name": "pulse-web",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Noon Interactive rhythm community for PHP and cPanel",
+  "scripts": {
+    "test": "node tests/integration.cjs"
+  },
+  "dependencies": {
+    "@php-wasm/node": "^3.1.58"
+  }
+}
