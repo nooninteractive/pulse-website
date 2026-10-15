@@ -7,3 +7,10 @@ pulse-config.php
 *.zip
 storage/
 .runtime/
+
+# Database definitions, backups and private local runtime data
+*.sql
+*.sql.*
+.local-data/
+*.db
+*.sqlite*

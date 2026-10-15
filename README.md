@@ -2,17 +2,17 @@
 
 Web de ritmo de Noon Interactive para **https://pulse.nooninteractive.com**, con PHP 8.2+, MySQL y Apache/cPanel.
 
-Incluye juego de círculos con cuatro beats demo sintetizados, registro e inicio de sesión, subida de canciones MP3/OGG/WAV con portada, reproducción de contenido de la comunidad, favoritos locales y eliminación de publicaciones propias.
+La interfaz está en inglés e incluye catálogo, subida y descarga de mapas .pls para Unity. Incluye juego de círculos con cuatro beats demo sintetizados, registro e inicio de sesión, subida de canciones MP3/OGG/WAV con portada, reproducción de contenido de la comunidad, favoritos locales y eliminación de publicaciones propias.
 
 ## Instalar en cPanel
 
 Sigue [INSTALAR-CPANEL.md](INSTALAR-CPANEL.md). La raíz confirmada del subdominio es `/home/noonint1/pulse.nooninteractive.com`.
 
 - Sube sólo el contenido de `public/` a esa carpeta (incluidos `.htaccess` y `.user.ini`).
-- Importa `schema.sql` en una base MySQL propia de Pulse.
+- Prepara la base MySQL y la tabla de mapas por separado. Los archivos SQL no se incluyen en este repositorio.
 - Configura `pulse-config.example.php` como `/home/noonint1/pulse-config.php`, fuera de todas las carpetas públicas.
 - Crea `/home/noonint1/pulse-storage` con escritura para PHP y ajusta `storage_path`.
-- Activa HTTPS y las extensiones PHP `pdo_mysql`, `mbstring`, `fileinfo` y sesiones.
+- Activa HTTPS y las extensiones PHP `pdo_mysql`, `mbstring`, `fileinfo`, `zip` y sesiones.
 
 No subas contraseñas, configuración real, archivos de usuarios ni bases de datos a GitHub. No subas este repositorio completo al directorio público.
 
